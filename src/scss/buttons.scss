@@ -1,0 +1,110 @@
+@import "./colors";
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  column-gap: 8px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 22px;
+  line-height: 26px;
+  width: fit-content;
+  transition: 0.2s;
+  min-width: 232px;
+  white-space: nowrap;
+
+  &_green {
+    border: 2px solid $green;
+    color: $green;
+
+    & svg {
+      fill: $green;
+      stroke: $green;
+    }
+
+    &:hover {
+      background-color: $green;
+      color: $black;
+
+      & svg {
+        fill: $black;
+        stroke: $black;
+      }
+    }
+  }
+
+  &_blue-artiles {
+    min-width: 256px;
+    font-size: 24px;
+    padding: 16px 24px;
+    border: 2px solid $blue;
+    color: $black;
+
+    @media screen and (max-width: 1450px) {
+      min-width: 200px;
+      height: 54px;
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      min-width: 207px;
+      padding: 12px 24px;
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: 575px) {
+      column-gap: 26px;
+      min-width: 244px;
+      padding: 6px 24px;
+      font-size: 14px;
+    }
+
+    svg {
+        display: none;
+        fill: $blue;
+        stroke: $blue;
+
+        @media screen and (max-width: 575px){
+            display: flex;
+        }
+    }
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+
+      & svg {
+        fill: $white;
+        stroke: $white;
+      }
+    }
+  }
+
+  &_blue {
+    border: 2px solid $blue;
+    color: $blue;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  &_micro {
+    padding: 2px 10px;
+    font-size: 14px;
+    line-height: 130%;
+    min-width: 100px;
+    border-radius: 4px;
+  }
+
+  &_min {
+    font-size: 16px;
+    line-height: 130%;
+    min-width: 210px;
+  }
+}

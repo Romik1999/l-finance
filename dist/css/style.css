@@ -1,0 +1,428 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ThinItalic.woff2") format("woff2"), url("../fonts/Montserrat-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/*-------------*/
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/*-------------*/
+
+/*-------------*/
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-LightItalic.woff2") format("woff2"), url("../fonts/Montserrat-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/*-------------*/
+
+/*-------------*/
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Italic.woff2") format("woff2"), url("../fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*-------------*/
+
+/*-------------*/
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/*-------------*/
+
+/*-------------*/
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*-------------*/
+
+/*-------------*/
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*-------------*/
+
+/*-------------*/
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*-------------*/
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: GolosUi, sans-serif;
+  font-size: 22px;
+  line-height: 140%;
+  color: #100F0F;
+  font-weight: 400;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cont {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title {
+  margin: 0;
+  font-weight: 500;
+  line-height: 120%;
+  color: #100F0F;
+  font-size: 45px;
+}
+
+.section-title_green {
+  font-weight: 500;
+  color: #46ED6C;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+input:focus,
+input:focus-visible {
+  outline: 2px solid #0079FF;
+}
+
+.slider-arrows {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+}
+
+.slider-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 29%;
+  color: #C8C8C8;
+  background-color: transparent;
+  border: 1.5px solid #C8C8C8;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.slider-arrow svg {
+  fill: currentColor;
+}
+
+.slider-arrow:hover {
+  background-color: #0079FF;
+  border: 1.5px solid #0079FF;
+  color: #ffffff;
+}
+
+img[alt] {
+  font-size: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 22px;
+  line-height: 26px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  min-width: 232px;
+  white-space: nowrap;
+}
+
+.btn_green {
+  border: 2px solid #46ED6C;
+  color: #46ED6C;
+}
+
+.btn_green svg {
+  fill: #46ED6C;
+  stroke: #46ED6C;
+}
+
+.btn_green:hover {
+  background-color: #46ED6C;
+  color: #100F0F;
+}
+
+.btn_green:hover svg {
+  fill: #100F0F;
+  stroke: #100F0F;
+}
+
+.btn_blue-artiles {
+  min-width: 256px;
+  font-size: 24px;
+  padding: 16px 24px;
+  border: 2px solid #0079FF;
+  color: #100F0F;
+}
+
+.btn_blue-artiles svg {
+  display: none;
+  fill: #0079FF;
+  stroke: #0079FF;
+}
+
+.btn_blue-artiles:hover {
+  background-color: #0079FF;
+  color: #ffffff;
+}
+
+.btn_blue-artiles:hover svg {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.btn_blue {
+  border: 2px solid #0079FF;
+  color: #0079FF;
+}
+
+.btn_blue:hover {
+  background-color: #0079FF;
+  color: #ffffff;
+}
+
+.btn_micro {
+  padding: 2px 10px;
+  font-size: 14px;
+  line-height: 130%;
+  min-width: 100px;
+  border-radius: 4px;
+}
+
+.btn_min {
+  font-size: 16px;
+  line-height: 130%;
+  min-width: 210px;
+}
+
+@media screen and (max-width: 1450px) {
+  .btn_blue-artiles {
+    min-width: 200px;
+    height: 54px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  .btn_blue-artiles {
+    min-width: 207px;
+    padding: 12px 24px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  section {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .btn_blue-artiles {
+    -webkit-column-gap: 26px;
+       -moz-column-gap: 26px;
+            column-gap: 26px;
+    min-width: 244px;
+    padding: 6px 24px;
+    font-size: 14px;
+  }
+
+  .btn_blue-artiles svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .section-title {
+    font-size: 22px;
+  }
+}
