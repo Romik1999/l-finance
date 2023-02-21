@@ -1,4 +1,49 @@
 @import "src/scss/colors.scss";
 
 .footer {
+  padding: 38px 30px;
+  background-color: $white;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__menu {
+    margin-bottom: 30px;
+  }
+
+  &-menu {
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__link{
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &-socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+
+    &__item {
+      display: flex;
+      cursor: pointer;
+    }
+  }
 }
