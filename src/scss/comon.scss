@@ -4,24 +4,21 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: GolosUi, sans-serif;
-  font-size: 22px;
-  line-height: 140%;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
   color: $black;
   font-weight: 400;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: $beige;
 }
 
 section {
   padding: 0 30px;
   box-sizing: border-box;
   overflow: hidden;
-
-  @media screen and (max-width: 769px) {
-    padding: 0 15px;
-  }
 }
 
 main {
@@ -31,47 +28,32 @@ main {
 }
 
 .cont {
-  max-width: 1260px;
+  max-width: 1450px;
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-.section-title {
-  margin: 0;
-  font-weight: 500;
-  line-height: 120%;
-  color: $black;
-  font-size: 45px;
-
-  @media screen and (max-width: 1199px) {
-    font-size: 32px;
-    line-height: 130%;
-  }
-
-  @media screen and (max-width: 992px) {
-    font-size: 28px;
-    line-height: 120%;
-  }
-
-  @media screen and (max-width: 425px) {
-    font-size: 22px;
-  }
-
-  &_green {
-    font-weight: 500;
-    color: $green;
-  }
+.logo {
+  display: flex;
 }
 
 .swiper {
   overflow: hidden;
 }
 
+.section-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  color: #0D0D0D;
+  margin-bottom: 30px;
+}
+
 input {
   &:focus,
   &:focus-visible {
-    outline: 2px solid $blue;
+    outline: 2px solid blue;
   }
 }
 
@@ -94,49 +76,4 @@ input {
 }
 
 @media screen and (max-width: 350px) {
-}
-
-.slider-arrows {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-  column-gap: 18px;
-}
-
-.slider-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 29px;
-  height: 29px;
-  border-radius: 29%;
-  color: $grey-dark;
-  background-color: transparent;
-  border: 1.5px solid $grey-dark;
-  transition: 0.2s;
-  cursor: pointer;
-
-  svg {
-    fill: currentColor;
-  }
-
-  &:hover {
-    background-color: $blue;
-    border: 1.5px solid $blue;
-    color: $white;
-  }
-
-  //
-  //&.swiper-button-disabled {
-  //  color: $white;
-  //  opacity: 0.3;
-  //  background-color: $grey-footnote;
-  //  border: 1.5px solid $grey-footnote;
-  //  pointer-events: none;
-  //}
-}
-
-img[alt] {
-  font-size: 12px;
 }
