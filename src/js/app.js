@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper', {
         slidesPerView: 3,
         loop: true,
+        freeMode: true,
         navigation: {
             nextEl: '.popular-slider__arrow--next',
             prevEl: '.popular-slider__arrow--prev',

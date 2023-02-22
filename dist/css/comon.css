@@ -68,3 +68,14 @@ input:focus,
 input:focus-visible {
   outline: 2px solid blue;
 }
+
+@media screen and (max-width: 950px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
