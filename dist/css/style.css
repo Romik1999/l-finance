@@ -2048,6 +2048,10 @@ input:focus-visible {
   overflow: hidden;
 }
 
+.comments-item__img .comments-item__title {
+  display: none;
+}
+
 .comments-item__title {
   font-weight: 700;
   font-size: 18px;
