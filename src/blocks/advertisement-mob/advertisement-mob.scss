@@ -1,0 +1,9 @@
+@import "src/scss/colors.scss";
+
+.advertisement-mob {
+  display: none;
+
+  @media screen and (max-width: 950px) {
+    display: block;
+  }
+}

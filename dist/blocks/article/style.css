@@ -42,6 +42,11 @@
   padding: 60px 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
+}
+
+.article__body img {
+  max-width: 100%;
 }
 
 .article__img {
@@ -77,6 +82,7 @@
 
 .article__sidebar {
   min-width: 225px;
+  max-width: 225px;
   width: 100%;
 }
 
@@ -91,7 +97,7 @@
 .article-links__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 30px;
+  line-height: 110%;
   margin-bottom: 20px;
 }
 
@@ -101,7 +107,7 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 110%;
   text-decoration-line: underline;
   color: #000000;
   -webkit-transition: 0.2s;
@@ -153,10 +159,6 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
-}
-
-.article-author__desc {
-  font-size: 14px;
   margin-bottom: 10px;
 }
 
@@ -211,20 +213,74 @@
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1450px) {
+  .article__body {
+    padding: 30px 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .article__body {
+    padding: 15px 30px;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .article {
     padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .article-author__img {
+  .article__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 5px;
+  }
+
+  .article__body {
+    padding: 30px 10px;
+  }
+
+  .article__img {
+    margin-bottom: 15px;
+  }
+
+  .article__img img,
+  .article__img svg {
+    max-height: 400px;
+  }
+
+  .article__excerpt {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .article__sidebar {
     display: none;
   }
 
-  .article-author__title {
-    display: none;
+  .article-links {
+    padding: 20px;
   }
 
-  .article-author__desc {
-    display: none;
+  .article-links__title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .article-links__item {
+    font-size: 13px;
+  }
+
+  .article-links__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .article__content {
+    font-size: 13px;
+    line-height: 120%;
   }
 }

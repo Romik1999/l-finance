@@ -6,6 +6,8 @@
 
   @media screen and (max-width: 950px) {
     padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &__advertisement {
@@ -29,6 +31,11 @@
   &__wrapper {
     display: flex;
     column-gap: 20px;
+
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+      padding: 0 5px;
+    }
   }
 
   &__body {
@@ -37,6 +44,23 @@
     border-radius: 5px;
     padding: 60px 100px;
     box-sizing: border-box;
+    width: 100%;
+
+    @media screen and (max-width: 1450px) {
+      padding: 30px 50px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      padding: 15px 30px;
+    }
+
+    @media screen and (max-width: 950px) {
+      padding: 30px 10px;
+    }
+
+    & img {
+      max-width: 100%;
+    }
   }
 
   &__img {
@@ -44,6 +68,10 @@
     height: auto;
     display: flex;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 950px) {
+      margin-bottom: 15px;
+    }
 
     & img,
     & svg {
@@ -53,6 +81,11 @@
       object-fit: cover;
       border-radius: 5px;
       filter: drop-shadow(0px 0px 1px #C4C4C4);
+
+
+      @media screen and (max-width: 950px) {
+        max-height: 400px;
+      }
     }
   }
 
@@ -60,6 +93,11 @@
     font-size: 20px;
     line-height: 120%;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 950px) {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
   }
 
   &__links {
@@ -68,7 +106,12 @@
 
   &__sidebar {
     min-width: 225px;
+    max-width: 225px;
     width: 100%;
+
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
   }
 
   &-links {
@@ -77,11 +120,20 @@
     border-radius: 5px;
     padding: 25px 35px;
 
+    @media screen and (max-width: 950px) {
+      padding: 20px;
+    }
+
     &__title {
       font-weight: 700;
       font-size: 28px;
-      line-height: 30px;
+      line-height: 110%;
       margin-bottom: 20px;
+
+      @media screen and (max-width: 950px) {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
     }
 
     &__item {
@@ -89,14 +141,22 @@
       width: fit-content;
 
       font-size: 18px;
-      line-height: 21px;
+      line-height: 110%;
       text-decoration-line: underline;
       color: $black;
       transition: 0.2s;
       cursor: pointer;
 
+      @media screen and (max-width: 950px) {
+        font-size: 13px;
+      }
+
       &:not(:last-child) {
         margin-bottom: 15px;
+
+        @media screen and (max-width: 950px) {
+          margin-bottom: 10px;
+        }
       }
 
       &:hover {
@@ -107,6 +167,11 @@
 
   &__content {
     margin-bottom: 30px;
+
+    @media screen and (max-width: 950px) {
+      font-size: 13px;
+      line-height: 120%;
+    }
   }
 
   &-author {
@@ -120,10 +185,6 @@
       border-radius: 50%;
       overflow: hidden;
 
-      @media screen and (max-width: 950px) {
-        display: none;
-      }
-
       & img,
       & svg {
         width: 100%;
@@ -136,18 +197,7 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 120%;
-
-      @media screen and (max-width: 950px) {
-        display: none;
-      }
-    }
-
-    &__desc {
-      font-size: 14px;
       margin-bottom: 10px;
-      @media screen and (max-width: 950px) {
-        display: none;
-      }
     }
 
     &__bottom {

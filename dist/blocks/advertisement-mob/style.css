@@ -1,0 +1,9 @@
+.advertisement-mob {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .advertisement-mob {
+    display: block;
+  }
+}
