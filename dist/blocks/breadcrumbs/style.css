@@ -1,0 +1,18 @@
+.breadcrumbs {
+  padding: 30px;
+  font-size: 16px;
+  line-height: 120%;
+  color: #0D0D0D;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 950px) {
+  .breadcrumbs {
+    font-size: 13px;
+    padding: 30px 15px;
+  }
+}
