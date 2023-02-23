@@ -41,6 +41,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    const otherSlider = new Swiper('.other-slider', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.other-slider__arrow--next',
+            prevEl: '.other-slider__arrow--prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            575: {
+                slidesPerView: "auto"
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        }
+    });
+
     let burger = document.querySelector('.hamburger');
     let mobile = document.querySelector('.mobile');
     burger.addEventListener('click', () => {

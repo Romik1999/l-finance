@@ -1,6 +1,6 @@
 .article {
   padding-top: 0;
-  padding-bottom: 90px;
+  padding-bottom: 45px;
 }
 
 .article__advertisement {
@@ -213,7 +213,7 @@
 
 @media screen and (max-width: 950px) {
   .article {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 
   .article-author__img {
