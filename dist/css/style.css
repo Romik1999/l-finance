@@ -1157,6 +1157,7 @@ input:focus-visible {
 
 .news-item__img {
   height: 360px;
+  min-height: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2420,6 +2421,7 @@ input:focus-visible {
 
   .news-item__img {
     height: 225px;
+    min-height: 225px;
   }
 
   .news-item__content {
