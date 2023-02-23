@@ -62,6 +62,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+
+
+    const readSlider = new Swiper('.read-slider', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.read-slider__arrow--next',
+            prevEl: '.read-slider__arrow--prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            575: {
+                slidesPerView: "auto"
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        }
+    });
+
     let burger = document.querySelector('.hamburger');
     let mobile = document.querySelector('.mobile');
     burger.addEventListener('click', () => {
