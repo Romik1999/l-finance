@@ -140,6 +140,8 @@
       letter-spacing: 0.5px;
       color: #0D0D0D;
       margin-bottom: 15px;
+      display: block;
+      text-decoration: none;
 
       @media screen and (max-width: 576px) {
         font-size: 14px;
