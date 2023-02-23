@@ -6,21 +6,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
 }
 
 .news__item {
   width: 100%;
-}
-
-.news__link {
-  font-size: 18px;
-  line-height: 18px;
-  color: #039BE5;
-  margin-top: 60px;
-  display: block;
+  height: unset !important;
 }
 
 .news-item {
@@ -43,6 +33,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
 }
 
 .news-item__img img,
@@ -108,4 +100,92 @@
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
+}
+
+.news__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.news__link {
+  font-size: 18px;
+  line-height: 18px;
+  color: #039BE5;
+  display: block;
+  cursor: pointer;
+}
+
+.news__slide {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  letter-spacing: 0.5px;
+  color: #939699;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 1199px) {
+  .news__item {
+    width: 400px !important;
+  }
+
+  .news__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .news-item__img {
+    height: 225px;
+  }
+
+  .news-item__content {
+    padding: 15px 20px;
+  }
+
+  .news-item__title {
+    font-size: 16px;
+  }
+
+  .news-item__text {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .news__bottom {
+    margin-top: 15px;
+  }
+
+  .news__link {
+    font-size: 10px;
+  }
+
+  .news__slide {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .news__item {
+    width: 100% !important;
+  }
 }

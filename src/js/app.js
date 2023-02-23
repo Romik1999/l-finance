@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
+    const popularSlider = new Swiper('.popular-slider', {
         slidesPerView: 3,
         loop: true,
         navigation: {
@@ -16,6 +16,27 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             1200: {
                 slidesPerView: 3,
+            },
+        }
+    });
+
+    const news = new Swiper('.news-slider', {
+        slidesPerView: 3,
+        loop: false,
+        allowTouchMove: false,
+        spaceBetween: 20,
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                allowTouchMove: true,
+            },
+            575: {
+                slidesPerView: "auto",
+                allowTouchMove: true,
+            },
+            1200: {
+                slidesPerView: 3,
+                allowTouchMove: false,
             },
         }
     });
