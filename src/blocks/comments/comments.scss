@@ -1,6 +1,12 @@
 @import "src/scss/colors.scss";
 
 .comments {
+
+  &__title{
+    @media screen and (max-width: 950px) {
+      text-align: left;
+    }
+  }
   &__wrapper {
     max-width: 960px;
     width: 100%;
@@ -19,6 +25,15 @@
     flex-direction: column;
     row-gap: 30px;
     margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+
+    @media screen and (max-width: 950px) {
+      height: 260px;
+      margin-bottom: 15px;
+      row-gap: 15px;
+    }
 
     & span {
       font-size: 18px;
@@ -30,6 +45,11 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
+
+    @media screen and (max-width: 950px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__link {
@@ -39,6 +59,11 @@
     color: $blue;
     transition: 0.2s;
     cursor: pointer;
+
+    @media screen and (max-width: 950px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
 
     &:hover{
       color: $black;
