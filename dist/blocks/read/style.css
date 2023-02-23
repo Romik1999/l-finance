@@ -44,6 +44,15 @@
   color: #000000;
   text-decoration: none;
   display: block;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.read-top__title:hover {
+  color: #2ECC71;
+  text-decoration: underline;
 }
 
 .read-top__desc {
@@ -59,6 +68,9 @@
   display: flex;
   z-index: 1;
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .read-top__img img {
@@ -66,7 +78,18 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.read-top__img:hover img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .read__slider {
@@ -102,6 +125,9 @@
           box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   z-index: 10;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .read-slider__arrow--prev {
@@ -110,6 +136,11 @@
 
 .read-slider__arrow--next {
   right: -65px;
+}
+
+.read-slider__arrow:hover {
+  -webkit-box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.25);
 }
 
 .read-item {
@@ -149,6 +180,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .read-item__img img {
@@ -156,6 +190,18 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.read-item__img:hover img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .read-item__theme {
@@ -177,6 +223,15 @@
   margin-bottom: 15px;
   display: block;
   text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.read-item__title:hover {
+  color: #039BE5;
+  text-decoration: underline;
 }
 
 .read-item__bottom {
