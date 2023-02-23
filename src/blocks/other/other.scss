@@ -1,11 +1,6 @@
 @import "src/scss/colors.scss";
 
 .other {
-  padding: 45px 30px;
-
-  @media screen and (max-width: 950px) {
-    padding: 30px 15px;
-  }
 
   &-slider {
     &__item {

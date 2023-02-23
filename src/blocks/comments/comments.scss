@@ -1,12 +1,47 @@
 @import "src/scss/colors.scss";
 
 .comments {
-  padding-top: 0;
-  padding-bottom: 90px;
-
-  @media screen and (max-width: 950px) {
-    padding-bottom: 60px;
+  &__wrapper {
+    max-width: 960px;
+    width: 100%;
   }
 
-  
+  &__content {
+    height: 320px;
+
+    background: $white;
+    box-shadow: 0px 0px 1px #C4C4C4;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 30px;
+
+    & span {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover{
+      color: $black;
+    }
+  }
 }
