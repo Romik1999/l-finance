@@ -33,6 +33,9 @@
           box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   z-index: 10;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .popular-slider__arrow--prev {
@@ -41,6 +44,11 @@
 
 .popular-slider__arrow--next {
   right: -65px;
+}
+
+.popular-slider__arrow:hover {
+  -webkit-box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.25);
 }
 
 .popular-item {
@@ -80,6 +88,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .popular-item__img img {
@@ -87,6 +98,18 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.popular-item__img:hover img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .popular-item__theme {
@@ -108,6 +131,15 @@
   margin-bottom: 15px;
   display: block;
   text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.popular-item__title:hover {
+  color: #039BE5;
+  text-decoration: underline;
 }
 
 .popular-item__bottom {

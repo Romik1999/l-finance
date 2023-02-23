@@ -49,6 +49,15 @@
   color: #000000;
   text-decoration: none;
   display: block;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.articles-item__title:hover {
+  color: #2ECC71;
+  text-decoration: underline;
 }
 
 .articles-item__desc {
@@ -64,6 +73,8 @@
   display: flex;
   z-index: 1;
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .articles-item__img img {
@@ -72,6 +83,18 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.articles-item__img:hover img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .articles-author {

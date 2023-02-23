@@ -57,10 +57,17 @@
       color: $black;
       text-decoration: none;
       display: block;
+      cursor: pointer;
+      transition: 0.2s;
 
       @media screen and (max-width: 950px) {
         font-size: 16px;
         margin-bottom: 10px;
+      }
+
+      &:hover {
+        color: $green;
+        text-decoration: underline;
       }
     }
 
@@ -79,16 +86,27 @@
       display: flex;
       z-index: 1;
       position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 5px;
 
       & img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 5px;
+
+        transition: 0.2s;
+        transform: scale(1);
 
         @media screen and (max-width: 950px) {
           min-height: 167px;
           max-height: 300px;
+        }
+      }
+
+      &:hover {
+        & img {
+          transform: scale(1.05);
         }
       }
     }
@@ -136,6 +154,7 @@
       box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
       cursor: pointer;
       z-index: 10;
+      transition: 0.2s;
 
       @media screen and (max-width: 950px) {
         display: none;
@@ -160,6 +179,10 @@
         @media screen and (max-width: 950px) {
           right: -10px;
         }
+      }
+
+      &:hover{
+        box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -201,6 +224,9 @@
       width: 117px;
       height: 117px;
       display: flex;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 5px;
 
       @media screen and (max-width: 576px) {
         min-width: 100px;
@@ -212,6 +238,14 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: 0.2s;
+        transform: scale(1);
+      }
+
+      &:hover {
+        & img {
+          transform: scale(1.05);
+        }
       }
     }
 
@@ -238,10 +272,17 @@
       margin-bottom: 15px;
       display: block;
       text-decoration: none;
+      cursor: pointer;
+      transition: 0.2s;
 
       @media screen and (max-width: 576px) {
         font-size: 14px;
         margin-bottom: 10px;
+      }
+
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
       }
     }
 
