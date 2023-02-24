@@ -30,6 +30,7 @@
       @media screen and (max-width: 950px) {
         margin-right: 0;
         padding: 20px 15px;
+        border-radius: 0px 0px 5px 5px;
       }
     }
 
@@ -89,6 +90,10 @@
       cursor: pointer;
       overflow: hidden;
       border-radius: 5px;
+
+      @media screen and (max-width: 950px) {
+        border-radius: 5px 5px 0px 0px;
+      }
 
       & img {
         width: 100%;

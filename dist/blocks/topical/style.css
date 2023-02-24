@@ -78,7 +78,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0px 5px 5px 0px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -172,6 +172,7 @@
   .topical-item__info {
     margin-right: 0;
     padding: 20px 15px;
+    border-radius: 0px 0px 5px 5px;
   }
 
   .topical-item__theme {
@@ -191,6 +192,7 @@
   .topical-item__img img {
     min-height: 167px;
     max-height: 300px;
+    border-radius: 5px 5px 0px 0px;
   }
 
   .topical-author__img {

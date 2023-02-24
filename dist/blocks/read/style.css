@@ -315,6 +315,7 @@
   .read-top__info {
     margin-right: 0;
     padding: 20px 15px;
+    border-radius: 0px 0px 5px 5px;
   }
 
   .read-top__theme {
@@ -329,6 +330,10 @@
 
   .read-top__desc {
     font-size: 13px;
+  }
+
+  .read-top__img {
+    border-radius: 5px 5px 0px 0px;
   }
 
   .read-top__img img {

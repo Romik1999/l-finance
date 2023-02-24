@@ -1,9 +1,13 @@
+.comments__title span {
+  font-weight: 400;
+}
+
 .comments__wrapper {
   max-width: 960px;
   width: 100%;
 }
 
-.comments__content--emty {
+.comments__content--empty {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 1px #C4C4C4;
           box-shadow: 0px 0px 1px #C4C4C4;
@@ -30,7 +34,7 @@
   text-align: center;
 }
 
-.comments__content--emty span {
+.comments__content--empty span {
   font-size: 18px;
   line-height: 25px;
 }
@@ -260,7 +264,7 @@
     text-align: left;
   }
 
-  .comments__content--emty {
+  .comments__content--empty {
     height: 260px;
     margin-bottom: 15px;
     row-gap: 15px;
