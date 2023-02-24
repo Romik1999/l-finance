@@ -283,4 +283,24 @@
     font-size: 13px;
     line-height: 120%;
   }
+
+  .article-author {
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+  }
+
+  .article-author__img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .article-author__title {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .article-author__bottom {
+    font-size: 9px;
+  }
 }

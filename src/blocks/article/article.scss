@@ -178,12 +178,21 @@
     display: flex;
     column-gap: 20px;
 
+    @media screen and (max-width: 950px) {
+      column-gap: 5px;
+    }
+
     &__img {
       width: 67px;
       height: 67px;
       display: flex;
       border-radius: 50%;
       overflow: hidden;
+
+      @media screen and (max-width: 950px) {
+        width: 45px;
+        height: 45px;
+      }
 
       & img,
       & svg {
@@ -198,6 +207,11 @@
       font-size: 18px;
       line-height: 120%;
       margin-bottom: 10px;
+
+      @media screen and (max-width: 950px) {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
     }
 
     &__bottom {
@@ -206,6 +220,10 @@
       font-size: 11px;
       line-height: 120%;
       color: $grey;
+
+      @media screen and (max-width: 950px) {
+        font-size: 9px;
+      }
     }
 
     &__date,
