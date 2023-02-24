@@ -189,6 +189,18 @@
           column-gap: 5px;
 }
 
+.article-author__date img,
+.article-author__date svg,
+.article-author__comments img,
+.article-author__comments svg,
+.article-author__likes img,
+.article-author__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .article-sidebar__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,5 +315,15 @@
 
   .article-author__bottom {
     font-size: 9px;
+  }
+
+  .article-author__date img,
+  .article-author__date svg,
+  .article-author__comments img,
+  .article-author__comments svg,
+  .article-author__likes img,
+  .article-author__likes svg {
+    width: 11px;
+    height: 10px;
   }
 }

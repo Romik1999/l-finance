@@ -152,6 +152,7 @@
 .comments-form {
   background-color: #ffffff;
   padding: 37px 30px;
+  border-radius: 5px;
 }
 
 .comments-form__textarea {

@@ -161,6 +161,18 @@
           column-gap: 5px;
 }
 
+.articles-author__date img,
+.articles-author__date svg,
+.articles-author__comments img,
+.articles-author__comments svg,
+.articles-author__likes img,
+.articles-author__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .articles__pagination {
   margin-top: 30px;
   display: -webkit-box;
@@ -255,6 +267,16 @@
 
   .articles-author__desc {
     display: none;
+  }
+
+  .articles-author__date img,
+  .articles-author__date svg,
+  .articles-author__comments img,
+  .articles-author__comments svg,
+  .articles-author__likes img,
+  .articles-author__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .articles__pagination {

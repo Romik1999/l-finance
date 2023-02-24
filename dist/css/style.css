@@ -998,6 +998,18 @@ input:focus-visible {
           column-gap: 5px;
 }
 
+.topical-author__date img,
+.topical-author__date svg,
+.topical-author__comments img,
+.topical-author__comments svg,
+.topical-author__likes img,
+.topical-author__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .popular__slider {
   max-width: 1340px;
   width: 100%;
@@ -1168,6 +1180,18 @@ input:focus-visible {
           column-gap: 5px;
 }
 
+.popular-item__date img,
+.popular-item__date svg,
+.popular-item__comments img,
+.popular-item__comments svg,
+.popular-item__likes img,
+.popular-item__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .popular__slide {
   display: none;
   -webkit-box-align: center;
@@ -1248,7 +1272,10 @@ input:focus-visible {
 }
 
 .news-item__content {
-  padding: 20px 25px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1282,7 +1309,7 @@ input:focus-visible {
 .news-item__text {
   font-size: 18px;
   line-height: 120%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .news-item__bottom {
@@ -1311,6 +1338,18 @@ input:focus-visible {
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
+}
+
+.news-item__date img,
+.news-item__date svg,
+.news-item__comments img,
+.news-item__comments svg,
+.news-item__likes img,
+.news-item__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
 }
 
 .news__bottom {
@@ -1524,6 +1563,18 @@ input:focus-visible {
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
+}
+
+.articles-author__date img,
+.articles-author__date svg,
+.articles-author__comments img,
+.articles-author__comments svg,
+.articles-author__likes img,
+.articles-author__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
 }
 
 .articles__pagination {
@@ -1763,6 +1814,18 @@ input:focus-visible {
           column-gap: 5px;
 }
 
+.article-author__date img,
+.article-author__date svg,
+.article-author__comments img,
+.article-author__comments svg,
+.article-author__likes img,
+.article-author__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .article-sidebar__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1869,7 +1932,10 @@ input:focus-visible {
 }
 
 .other-item__content {
-  padding: 20px 25px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1903,7 +1969,7 @@ input:focus-visible {
 .other-item__text {
   font-size: 18px;
   line-height: 120%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .other-item__bottom {
@@ -1932,6 +1998,18 @@ input:focus-visible {
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
+}
+
+.other-item__date img,
+.other-item__date svg,
+.other-item__comments img,
+.other-item__comments svg,
+.other-item__likes img,
+.other-item__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
 }
 
 .other__slide {
@@ -2106,6 +2184,7 @@ input:focus-visible {
 .comments-form {
   background-color: #ffffff;
   padding: 37px 30px;
+  border-radius: 5px;
 }
 
 .comments-form__textarea {
@@ -2476,6 +2555,18 @@ input:focus-visible {
           column-gap: 5px;
 }
 
+.read-item__date img,
+.read-item__date svg,
+.read-item__comments img,
+.read-item__comments svg,
+.read-item__likes img,
+.read-item__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .read__slide {
   display: none;
   -webkit-box-align: center;
@@ -2791,6 +2882,16 @@ input:focus-visible {
     display: none;
   }
 
+  .topical-author__date img,
+  .topical-author__date svg,
+  .topical-author__comments img,
+  .topical-author__comments svg,
+  .topical-author__likes img,
+  .topical-author__likes svg {
+    width: 11px;
+    height: 10px;
+  }
+
   .popular-slider__arrow {
     display: none;
   }
@@ -2801,6 +2902,16 @@ input:focus-visible {
 
   .popular-slider__arrow--next {
     right: -10px;
+  }
+
+  .popular-item__date img,
+  .popular-item__date svg,
+  .popular-item__comments img,
+  .popular-item__comments svg,
+  .popular-item__likes img,
+  .popular-item__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .popular__slide {
@@ -2825,6 +2936,16 @@ input:focus-visible {
   .news-item__text {
     font-size: 13px;
     margin-bottom: 25px;
+  }
+
+  .news-item__date img,
+  .news-item__date svg,
+  .news-item__comments img,
+  .news-item__comments svg,
+  .news-item__likes img,
+  .news-item__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .news__bottom {
@@ -2892,6 +3013,16 @@ input:focus-visible {
 
   .articles-author__desc {
     display: none;
+  }
+
+  .articles-author__date img,
+  .articles-author__date svg,
+  .articles-author__comments img,
+  .articles-author__comments svg,
+  .articles-author__likes img,
+  .articles-author__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .articles__pagination {
@@ -2988,6 +3119,16 @@ input:focus-visible {
     font-size: 9px;
   }
 
+  .article-author__date img,
+  .article-author__date svg,
+  .article-author__comments img,
+  .article-author__comments svg,
+  .article-author__likes img,
+  .article-author__likes svg {
+    width: 11px;
+    height: 10px;
+  }
+
   .other-slider__arrow {
     display: none;
   }
@@ -3016,6 +3157,16 @@ input:focus-visible {
   .other-item__text {
     font-size: 13px;
     margin-bottom: 25px;
+  }
+
+  .other-item__date img,
+  .other-item__date svg,
+  .other-item__comments img,
+  .other-item__comments svg,
+  .other-item__likes img,
+  .other-item__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .other__slide {
@@ -3098,6 +3249,16 @@ input:focus-visible {
 
   .read-slider__arrow--next {
     right: -10px;
+  }
+
+  .read-item__date img,
+  .read-item__date svg,
+  .read-item__comments img,
+  .read-item__comments svg,
+  .read-item__likes img,
+  .read-item__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .read__slide {
