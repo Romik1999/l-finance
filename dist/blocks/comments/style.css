@@ -84,6 +84,7 @@
      -moz-column-gap: 15px;
           column-gap: 15px;
   background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .comments-item__img {

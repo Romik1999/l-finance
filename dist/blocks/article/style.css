@@ -47,6 +47,7 @@
 
 .article__body img {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .article__img {

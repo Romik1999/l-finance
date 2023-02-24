@@ -1621,6 +1621,7 @@ input:focus-visible {
 
 .article__body img {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .article__img {
@@ -2037,6 +2038,7 @@ input:focus-visible {
      -moz-column-gap: 15px;
           column-gap: 15px;
   background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .comments-item__img {
