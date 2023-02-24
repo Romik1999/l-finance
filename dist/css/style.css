@@ -2859,6 +2859,7 @@ input:focus-visible {
   .articles-item__info {
     margin-right: 0;
     padding: 20px 15px;
+    border-radius: 0px 0px 5px 5px;
   }
 
   .articles-item__theme {
@@ -2878,6 +2879,7 @@ input:focus-visible {
   .articles-item__img img {
     min-height: 167px;
     max-height: 300px;
+    border-radius: 5px 5px 0px 0px;
   }
 
   .articles-author__img {
