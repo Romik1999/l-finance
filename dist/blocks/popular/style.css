@@ -168,6 +168,18 @@
           column-gap: 5px;
 }
 
+.popular-item__date img,
+.popular-item__date svg,
+.popular-item__comments img,
+.popular-item__comments svg,
+.popular-item__likes img,
+.popular-item__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .popular__slide {
   display: none;
   -webkit-box-align: center;
@@ -217,6 +229,16 @@
 
   .popular-slider__arrow--next {
     right: -10px;
+  }
+
+  .popular-item__date img,
+  .popular-item__date svg,
+  .popular-item__comments img,
+  .popular-item__comments svg,
+  .popular-item__likes img,
+  .popular-item__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .popular__slide {

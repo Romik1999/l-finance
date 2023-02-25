@@ -478,7 +478,7 @@
   .header__action img,
   .header__action svg {
     height: 30px;
-    width: auto;
+    width: 40px;
   }
 
   .header__action--search,

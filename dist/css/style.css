@@ -2782,7 +2782,7 @@ input:focus-visible {
   .header__action img,
   .header__action svg {
     height: 30px;
-    width: auto;
+    width: 40px;
   }
 
   .header__action--search,
@@ -3096,6 +3096,15 @@ input:focus-visible {
 
   .article__content {
     font-size: 13px;
+    line-height: 120%;
+  }
+
+  .article__content h1,
+  .article__content h2,
+  .article__content h3,
+  .article__content h4,
+  .article__content h5,
+  .article__content h6 {
     line-height: 120%;
   }
 

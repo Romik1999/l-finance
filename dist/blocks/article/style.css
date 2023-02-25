@@ -297,6 +297,15 @@
     line-height: 120%;
   }
 
+  .article__content h1,
+  .article__content h2,
+  .article__content h3,
+  .article__content h4,
+  .article__content h5,
+  .article__content h6 {
+    line-height: 120%;
+  }
+
   .article-author {
     -webkit-column-gap: 5px;
        -moz-column-gap: 5px;

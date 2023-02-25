@@ -260,6 +260,18 @@
           column-gap: 5px;
 }
 
+.read-item__date img,
+.read-item__date svg,
+.read-item__comments img,
+.read-item__comments svg,
+.read-item__likes img,
+.read-item__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 .read__slide {
   display: none;
   -webkit-box-align: center;
@@ -355,6 +367,16 @@
 
   .read-slider__arrow--next {
     right: -10px;
+  }
+
+  .read-item__date img,
+  .read-item__date svg,
+  .read-item__comments img,
+  .read-item__comments svg,
+  .read-item__likes img,
+  .read-item__likes svg {
+    width: 11px;
+    height: 10px;
   }
 
   .read__slide {

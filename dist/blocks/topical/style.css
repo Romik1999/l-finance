@@ -157,6 +157,18 @@
           column-gap: 5px;
 }
 
+.topical-author__date img,
+.topical-author__date svg,
+.topical-author__comments img,
+.topical-author__comments svg,
+.topical-author__likes img,
+.topical-author__likes svg {
+  width: 12px;
+  height: 11px;
+  max-width: unset;
+  border-radius: unset;
+}
+
 @media screen and (max-width: 950px) {
   .topical {
     padding-bottom: 30px;
@@ -205,5 +217,15 @@
 
   .topical-author__desc {
     display: none;
+  }
+
+  .topical-author__date img,
+  .topical-author__date svg,
+  .topical-author__comments img,
+  .topical-author__comments svg,
+  .topical-author__likes img,
+  .topical-author__likes svg {
+    width: 11px;
+    height: 10px;
   }
 }
