@@ -258,6 +258,8 @@
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .read-item__date img,

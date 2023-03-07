@@ -108,6 +108,7 @@
 
 .articles-author__img {
   width: 67px;
+  min-width: 67px;
   height: 67px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,6 +160,8 @@
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .articles-author__date img,
