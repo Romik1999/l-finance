@@ -10,11 +10,12 @@
 }
 
 .articles {
-  &__item{
-    &:not(:last-child){
+  &__item {
+    &:not(:last-child) {
       margin-bottom: 15px;
     }
   }
+
   &-item {
     display: flex;
     border-radius: 5px;
@@ -207,19 +208,21 @@
 }
 
 .pagination {
-  display: flex;
-  align-items: center;
-  column-gap: 27px;
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
 
-  @media screen and (max-width: 950px) {
-    column-gap: 17px;
+    @media screen and (max-width: 950px) {
+      column-gap: 17px;
+    }
+
+    @media screen and (max-width: 350px) {
+      column-gap: 15px;
+    }
   }
 
-  @media screen and (max-width: 350px) {
-    column-gap: 15px;
-  }
-
-  &__number {
+  &__link {
     font-size: 18px;
     line-height: 18px;
     color: $black;

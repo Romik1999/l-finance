@@ -58,6 +58,7 @@
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  color: #000000;
 }
 
 .footer-menu__link:hover {
