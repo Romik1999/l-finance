@@ -97,6 +97,35 @@ document.addEventListener('DOMContentLoaded', function () {
             mobile.classList.add('active');
             document.body.style.overflow = "hidden";
         }
-
     });
+
+
+    let links = document.querySelectorAll('[data-scroll]');
+    links.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            let $link = event.currentTarget;
+            let $index = item.getAttribute('data-scroll-index');
+            let $el = $link.getAttribute('data-scroll').indexOf($index);
+            console.log("$link", $link);
+            console.log("$index", $index);
+            console.log("$el", $el);
+        })
+    });
+
+
+    // $('body').on('click', '[data-scroll]', (e) => {
+    //     e.preventDefault();
+    //     const $link = $(e.currentTarget);
+    //     let index = $link.data('scrollIndex');
+    //     if (index === undefined) {
+    //         index = 0;
+    //     }
+    //     const $el = $($link.data('scroll')).eq(index);
+    //     $('html, body').animate(
+    //         {
+    //             scrollTop: $el.offset().top - ($(window).height() * 8) / 100,
+    //         },600
+    //     );
+    // });
 });
