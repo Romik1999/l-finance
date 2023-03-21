@@ -1,26 +1,34 @@
 @import "src/scss/colors.scss";
 
 .header {
-  box-sizing: border-box;
-  padding: 0 30px;
-  height: 80px;
-  background-color: $white;
-
-  @media screen and (max-width: 1450px) {
-    height: 70px;
-  }
-
-  @media screen and (max-width: 1199px) {
-    height: auto;
-    padding: 10px 30px;
-  }
-
-  @media screen and (max-width: 950px) {
-    padding: 8.5px 15px;
-  }
+  position: relative;
 
   & .cont {
     height: 100%;
+  }
+
+  &-top {
+    box-sizing: border-box;
+    padding: 0 30px;
+    height: 80px;
+    background-color: $white;
+    z-index: 6;
+    transition: 0.2s;
+    position: relative;
+
+    @media screen and (max-width: 1450px) {
+      height: 70px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      height: 85px;
+      padding: 10px 30px;
+    }
+
+    @media screen and (max-width: 950px) {
+      padding: 8.5px 15px;
+      height: auto;
+    }
   }
 
   &__wrapper {
@@ -385,5 +393,84 @@
         }
       }
     }
+  }
+}
+
+
+.header {
+  &-search {
+    box-sizing: border-box;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 30px;
+    transform: translateY(-150%);
+    animation-delay: 0.1s;
+    transition: 0.3s;
+    z-index: 5;
+
+    @media screen and (max-width: 1450px) {
+      top: 70px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      top: 85px;
+    }
+
+    &.active {
+      transform: translateY(0);
+    }
+  }
+}
+
+.search-form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 102px;
+  grid-column-gap: 20px;
+  height: 40px;
+
+  &__input {
+    position: relative;
+    font-weight: 400;
+    font-family: 'Montserrat Regular', sans-serif;
+    background: #F6F5F4;
+    border: 1px solid #F6F5F4;
+    box-shadow: 0px 0px 1px #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 120%;
+    height: 40px;
+    padding: 5px 10px 5px 40px;
+    color: #939699;
+
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 102px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 15px;
+    background: linear-gradient(180deg, #40CAF5 0%, #2ECC71 100%);
   }
 }

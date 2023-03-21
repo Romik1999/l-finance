@@ -128,4 +128,25 @@ document.addEventListener('DOMContentLoaded', function () {
     //         },600
     //     );
     // });
+    // menu
+
+    let menuBtn = document.querySelector('[data-menu]');
+    let headerMenu = document.querySelector('.header-search');
+    let header = document.querySelector('header');
+    let input = document.querySelector('.search-form__input');
+
+    menuBtn.addEventListener('click', () => {
+        headerMenu.classList.toggle('active');
+        header.classList.toggle('active');
+        input.focus();
+    });
+
+    headerMenu.addEventListener(
+        "mouseleave",
+        (event) => {
+            headerMenu.classList.remove('active');
+            header.classList.remove('active');
+        },
+        false
+    );
 });
