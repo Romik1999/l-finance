@@ -113,21 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-
-    // $('body').on('click', '[data-scroll]', (e) => {
-    //     e.preventDefault();
-    //     const $link = $(e.currentTarget);
-    //     let index = $link.data('scrollIndex');
-    //     if (index === undefined) {
-    //         index = 0;
-    //     }
-    //     const $el = $($link.data('scroll')).eq(index);
-    //     $('html, body').animate(
-    //         {
-    //             scrollTop: $el.offset().top - ($(window).height() * 8) / 100,
-    //         },600
-    //     );
-    // });
     // menu
 
     let menuBtn = document.querySelector('[data-menu]');
@@ -149,4 +134,20 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         false
     );
+
+
+    $('body').on('click', '[data-scroll]', (e) => {
+        e.preventDefault();
+        const $link = $(e.currentTarget);
+        let index = $link.data('scrollIndex');
+        if (index === undefined) {
+            index = 0;
+        }
+        const $el = $($link.data('scroll')).eq(index);
+        $('html, body').animate(
+            {
+                scrollTop: $el.offset().top - ($(window).height() * 8) / 100,
+            },600
+        );
+    });
 });
