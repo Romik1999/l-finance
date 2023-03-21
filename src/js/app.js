@@ -100,18 +100,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    let links = document.querySelectorAll('[data-scroll]');
-    links.forEach(item => {
-        item.addEventListener('click', (event) => {
-            event.preventDefault();
-            let $link = event.currentTarget;
-            let $index = item.getAttribute('data-scroll-index');
-            let $el = $link.getAttribute('data-scroll').indexOf($index);
-            console.log("$link", $link);
-            console.log("$index", $index);
-            console.log("$el", $el);
-        })
-    });
+    // let links = document.querySelectorAll('[data-scroll]');
+    // links.forEach(item => {
+    //     item.addEventListener('click', (event) => {
+    //         event.preventDefault();
+    //         let $link = event.currentTarget;
+    //         let $index = item.getAttribute('data-scroll-index');
+    //         let $el = $link.getAttribute('data-scroll').indexOf($index);
+    //         console.log("$link", $link);
+    //         console.log("$index", $index);
+    //         console.log("$el", $el);
+    //     })
+    // });
 
     // menu
 
