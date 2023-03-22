@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-
     const readSlider = new Swiper('.read-slider', {
         slidesPerView: 3,
         spaceBetween: 20,
@@ -99,21 +98,83 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+// функция для модалки
 
-    // let links = document.querySelectorAll('[data-scroll]');
-    // links.forEach(item => {
-    //     item.addEventListener('click', (event) => {
-    //         event.preventDefault();
-    //         let $link = event.currentTarget;
-    //         let $index = item.getAttribute('data-scroll-index');
-    //         let $el = $link.getAttribute('data-scroll').indexOf($index);
-    //         console.log("$link", $link);
-    //         console.log("$index", $index);
-    //         console.log("$el", $el);
-    //     })
-    // });
+    function calcScroll() {
+        let div = document.createElement('div');
 
-    // menu
+        div.style.width = '50px';
+        div.style.height = '50px';
+        div.style.overflowY = 'scroll';
+        div.style.visibility = 'hidden';
+
+        document.body.appendChild(div);
+        let scarollWidth = div.offsetWidth - div.clientWidth;
+        div.remove();
+
+        return scarollWidth;
+    }
+
+    let scrollWidth = calcScroll();
+
+    function modal(modal, modalActiveClass, triggers, modalClose) {
+        const triggers_ = document.querySelectorAll(triggers),
+            modal_ = document.querySelector(modal),
+            modalClose_ = document.querySelector(modalClose);
+
+        if (triggers_.length > 0) {
+            triggers_.forEach(item => {
+                item.addEventListener('click', () => {
+                    modal_.classList.add(modalActiveClass);
+                    document.body.style.overflow = 'hidden';
+                    document.body.style.marginRight = `${scrollWidth}px`;
+                });
+            });
+
+            modalClose_.addEventListener('click', () => {
+                modal_.classList.remove(modalActiveClass);
+                document.body.style.overflow = '';
+                document.body.style.marginRight = '0px';
+            });
+
+            modal_.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal__container')) {
+                    modal_.classList.remove(modalActiveClass);
+                    document.body.style.overflow = '';
+                    document.body.style.marginRight = '0px';
+                }
+            });
+        }
+    }
+
+    modal('.modal', 'modal--active', '[data-modal-auth]', '.modal__close');
+
+// Accordion
+    const tabs = document.querySelector('.modal-content');
+    const tabsBtn = document.querySelectorAll('.modal-triggers__item');
+    const tabsContent = document.querySelectorAll('.modal-content__form');
+
+    if (tabs) {
+        tabs.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal-triggers__item')) {
+                const tabsPath = e.target.dataset.tabsPath;
+                tabsBtn.forEach(el => {
+                    el.classList.remove('modal-triggers__item--active')
+                });
+                document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('modal-triggers__item--active');
+                tabsHandler(tabsPath);
+            }
+        });
+    }
+
+    const tabsHandler = (path) => {
+        tabsContent.forEach(el => {
+            el.classList.remove('modal-content__form--active')
+        });
+        document.querySelector(`[data-tabs-target="${path}"]`).classList.add('modal-content__form--active');
+    };
+
+// menu
 
     let menuBtn = document.querySelector('[data-menu]');
     let headerMenu = document.querySelector('.header-search');
@@ -147,7 +208,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $('html, body').animate(
             {
                 scrollTop: $el.offset().top - ($(window).height() * 8) / 100,
-            },600
+            }, 600
         );
     });
-});
+})
+;
