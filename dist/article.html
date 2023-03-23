@@ -95,31 +95,25 @@
 <div class="mobile">
     <div class="mobile__wrapper">
         <div class="mobile__search">
-            <form role="search" method="get" class="mobile-search" action="/">
-                <img src="./img/search-icon.svg" class="mobile-search__icon">
-                <input class="mobile-search__input" type="text" value="" name="s" id="s" placeholder="Поиск по сайту">
-                <button class="mobile-search__button" type="submit">найти</button>
+            <form role="search" method="get" class="search-form" action="http://devtest-cms.ru/">
+                <img class="search-form__img"
+                     src="http://devtest-cms.ru/wp-content/themes/l-finance/assets/img/modal/search.png"
+                     alt="search-icon">
+                <input class="search-form__input" type="text" value="" name="s" id="s" placeholder="Поиск по сайту">
+                <button class="search-form__btn" type="submit">найти</button>
+                <!--    <ul class="ajax-search"></ul>-->
             </form>
         </div>
         <div class="mobile__menu">
-            <nav class="mobile-menu">
-                <ul class="mobile-menu__items">
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/">Главная</a></li>
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/category.html">Кредиты и займы</a>
-                    </li>
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/category.html">Кредитные карты</a>
-                    </li>
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/category.html">Ипотека</a></li>
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/category.html">Автокредиты</a>
-                    </li>
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/category.html">Инвестиции</a></li>
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/category.html">Банкротство</a>
-                    </li>
-                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="/category.html">Страхование</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <nav class="header-menu"><ul class="header-menu__items"><li class="header-menu__item"><a href="http://devtest-cms.ru/" class="header-menu__link">Главная</a></li>
+                <li class="header-menu__item"><a href="http://devtest-cms.ru/kredity-i-zajmy/" class="header-menu__link">Кредиты и займы</a></li>
+                <li class="header-menu__item header-menu__item--active"><a href="http://devtest-cms.ru/kreditnye-karty/" aria-current="page" class="header-menu__link header-menu__link--active">Кредитные карты</a></li>
+                <li class="header-menu__item"><a href="http://devtest-cms.ru/ipoteka/" class="header-menu__link">Ипотека</a></li>
+                <li class="header-menu__item"><a href="http://devtest-cms.ru/avtokredity/" class="header-menu__link">Автокредиты</a></li>
+                <li class="header-menu__item"><a href="http://devtest-cms.ru/investiczii/" class="header-menu__link">Инвестиции</a></li>
+                <li class="header-menu__item"><a href="http://devtest-cms.ru/bankrotstvo/" class="header-menu__link">Банкротство</a></li>
+                <li class="header-menu__item"><a href="http://devtest-cms.ru/strahovanie/" class="header-menu__link">Страхование</a></li>
+            </ul></nav>        </div>
         <div class="mobile__location">
             <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.7075 11.175C12.0525 12.5025 11.165 13.825 10.2575 15.0125C9.39662 16.132 8.47612 17.2044 7.5 18.225C6.52385 17.2044 5.60336 16.132 4.7425 15.0125C3.835 13.825 2.9475 12.5025 2.2925 11.175C1.63 9.83375 1.25 8.5775 1.25 7.5C1.25 5.8424 1.90848 4.25269 3.08058 3.08058C4.25269 1.90848 5.8424 1.25 7.5 1.25C9.1576 1.25 10.7473 1.90848 11.9194 3.08058C13.0915 4.25269 13.75 5.8424 13.75 7.5C13.75 8.5775 13.3688 9.83375 12.7075 11.175ZM7.5 20C7.5 20 15 12.8925 15 7.5C15 5.51088 14.2098 3.60322 12.8033 2.1967C11.3968 0.790176 9.48912 0 7.5 0C5.51088 0 3.60322 0.790176 2.1967 2.1967C0.790176 3.60322 2.96403e-08 5.51088 0 7.5C0 12.8925 7.5 20 7.5 20Z"
