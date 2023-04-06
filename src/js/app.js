@@ -195,8 +195,9 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         false
     );
+});
 
-
+jQuery(function($) {
     $('body').on('click', '[data-scroll]', (e) => {
         e.preventDefault();
         const $link = $(e.currentTarget);
@@ -211,5 +212,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 600
         );
     });
-})
-;
+});

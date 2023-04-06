@@ -208,21 +208,19 @@
 }
 
 .pagination {
-  &__links {
-    display: flex;
-    align-items: center;
-    column-gap: 27px;
+  display: flex;
+  align-items: center;
+  column-gap: 27px;
 
-    @media screen and (max-width: 950px) {
-      column-gap: 17px;
-    }
-
-    @media screen and (max-width: 350px) {
-      column-gap: 15px;
-    }
+  @media screen and (max-width: 950px) {
+    column-gap: 17px;
   }
 
-  &__link {
+  @media screen and (max-width: 350px) {
+    column-gap: 15px;
+  }
+
+  & .page-numbers {
     font-size: 18px;
     line-height: 18px;
     color: $black;
@@ -242,13 +240,13 @@
       color: $green;
     }
 
-    &--dots {
+    &.dots {
       &:hover {
         color: $black;
       }
     }
 
-    &--current {
+    &.current {
       color: $blue;
       cursor: text;
     }

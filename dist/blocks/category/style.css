@@ -186,7 +186,7 @@
           justify-content: flex-start;
 }
 
-.pagination__links {
+.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +198,7 @@
           column-gap: 27px;
 }
 
-.pagination__link {
+.pagination .page-numbers {
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -209,15 +209,15 @@
   transition: 0.2s;
 }
 
-.pagination__link:hover {
+.pagination .page-numbers:hover {
   color: #2ECC71;
 }
 
-.pagination__link--dots:hover {
+.pagination .page-numbers.dots:hover {
   color: #000000;
 }
 
-.pagination__link--current {
+.pagination .page-numbers.current {
   color: #039BE5;
   cursor: text;
 }
@@ -288,25 +288,25 @@
             justify-content: center;
   }
 
-  .pagination__links {
+  .pagination {
     -webkit-column-gap: 17px;
        -moz-column-gap: 17px;
             column-gap: 17px;
   }
 
-  .pagination__link {
+  .pagination .page-numbers {
     font-size: 13px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .pagination__links {
+  .pagination {
     -webkit-column-gap: 15px;
        -moz-column-gap: 15px;
             column-gap: 15px;
   }
 
-  .pagination__link {
+  .pagination .page-numbers {
     font-size: 12px;
   }
 }
