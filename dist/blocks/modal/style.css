@@ -216,9 +216,33 @@
   opacity: 1;
 }
 
+.modal-form__message {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.modal-form__message.active {
+  display: block;
+}
+
 .modal-form__label {
   display: block;
   margin-bottom: 20px;
+}
+
+.modal-form__label.error .modal-form__text {
+  color: red !important;
+}
+
+.modal-form__label.error .modal-form__input {
+  border: 1px solid red !important;
 }
 
 .modal-form__text {

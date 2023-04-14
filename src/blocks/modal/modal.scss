@@ -279,12 +279,38 @@
 }
 
 .modal-form {
+
+  &__message{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    color: red;
+    font-weight: bold;
+    display: none;
+
+    &.active{
+      display: block;
+    }
+  }
+
   &__label {
     display: block;
     margin-bottom: 20px;
 
     @media screen and (max-width: 769px) {
       margin-bottom: 10px;
+    }
+
+    &.error {
+      & .modal-form__text {
+        color: red !important;
+      }
+
+      & .modal-form__input {
+        border: 1px solid red !important;
+      }
     }
   }
 
